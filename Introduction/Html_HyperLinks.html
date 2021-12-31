@@ -1,15 +1,39 @@
-<!DOCTYPE html>
+<!--      
+HTML Hyperlinks Lesson:
+You can have a target in a hyper link by typing 'target ="_top" '
+REMEMBER QUOTATION MARKS ARE IMPORTANT
 
+HTML Links - The target Attribute
+The target attribute specifies where to open the linked document.
+target = "
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+        "
+mailto: THIS SENDS A EMAIL to include it 
+<a href = "mailto: [EMAIL]"> Email me </a>
+
+<button> </button>
+
+
+
+
+-->
+
+<!DOCTYPE html>
 <html>
      <body>
            <head>
                <title> Hello welcome to my first webpage JJudge0</title>
-              <a href="Html_HyperLinks.html" target = workd title="test" > help</a>
             </head>
-
-
-
-
-            
+            <a href= "https://www.udemy.com/" >Udemy</a> <!-- Links to Udemy-->
+            <a href="index.html" target ="_self" title="Go back to index" > Index </a> <!-- Links to index file webpage but opens the page on the same tab as it was clicked on-->
+            <br> <!-- breaker-->
+            <a href= "https://www.google.co.uk/" >Google Search </a> <!-- Links to Google-->
+            <br>
+            <a href="mailto:JatinderJudge01@gmail.com" target= "_blank" title = "My Email" >Email me</a> <!-- opens email with the "mailto"-->
+            <button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button>
+            <button>    </button>
         </body>
 </html>
