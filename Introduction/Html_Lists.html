@@ -10,6 +10,7 @@ There is 2 types of HTML Lists:
 1) Unordered Lists will be displayed in a bullet point format
 2) Ordered Lists will be displayed in a number point format
 3) Description Lists so when you're explaining something in a descriptive format for each item within the list
+4) Nested Lists can also be done example: 
 <li> - Listing an item
 <Ul> - Underordered Lists
 <ol> - Ordered Lists
@@ -49,7 +50,7 @@ If you type "!" it would generate a code block
     <hr>
 
 
-<h4 style=color:white>Unordered List </h4>
+<h4 style=color:white>Unordered List </h4> <!--Topic1-->
 <!--Ul- Known as Unordered Lists-->
     <ul>    
         <li style="color:white"> Pool</li>
@@ -58,11 +59,10 @@ If you type "!" it would generate a code block
         <li style="color:white"> Ice </li>
     </ul>
     
-<h4 style=color:white>Ordered List </h4>
+<h4 style=color:white>Ordered List </h4> <!--Topic2-->
 <!--Ol- Known as Ordered Lists-->
        <!--<ol type='a'> Uses "a,b,c,d"-->
            <ol type= '1'> <!--Uses "1,2,3,4"-->
-             
 <!--Note: OL can have a type attribute it replaces the 'Numbers' with any other ordered symbol such as "1,2,3,4" can be replaced with "a,b,c,d"-->
           <li style="color:white"> Wakeup</li>
           <li style="color:white"> Brush teeth</li>
@@ -70,24 +70,52 @@ If you type "!" it would generate a code block
           <li style="color:white"> Eat breakfast</li>
         </ol>
     
-<h4 style=color:white>Description List </h4>
+<h4 style=color:white>Description List </h4> <!--Topic3-->
      <dl style=color:white>  
                    <!--Examples-->
         <dt>HTML</dt>
         <dd> This adds structure to a webpage</dd>
+
         <dt>CSS</dt>
         <dd> This adds style to a webpage</dd>
+
         <dt>JS Script</dt>
         <dd> This adds Functionality to a webpage</dd>
+     <!-- Nested list loop-->
         <dt>Dom</dt>
-        <dd>Dom is good at siege</dd>
+        <dd>Dom is good at siege, because:
+            <ol> 
+            <li> KD is positive</li>
+            <li> Good rank: Diamond </li>
+            <li> Gives a callout</li>
+            <li> Very good </li>
+            </ol>
+        </dd>
       <!--You can add lists to a description-->
         <li style="color:white"> Pool</li>
         <li style="color:white"> Honey</li>
         <li style="color:white"> Apple</li>
         <li style="color:white"> Ice </li>
-      <!--   -->
+      <!--===================================-->
      </dl>
+
+<h4 style=color:white> Nested list</h4>
+<ol style=color:white>
+    
+    <li>Fruits
+         <ul>
+         <li>Pear</li>
+         <li>Apple</li>
+         <li>Pineapple></li>
+
+         </ul>
+    </li>
+    <li>HouseHold items</li>
+    <li>Cars</li>
+    
+</ol>
+
+
 
 
 
