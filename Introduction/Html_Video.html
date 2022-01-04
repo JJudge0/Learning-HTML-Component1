@@ -40,15 +40,20 @@ If you type "!" it would generate a code block
     <!-- Supports MP4,WebM, and Ogg-->
 
     <!-- Playing 1 video with controls and resized.-->
-    <video controls autoplay src ="/Video/sample-mp4-file-small.mp4" width="500" height="500">               </video>     
+    <video controls autoplay src ="/Video/sample-mp4-file-small.mp4" width="500" height="500">        </video>     
     <!--Plays in the background no controls just autoplay-->
-    <video controls autoplay src ="/Video/sample-mp4-file-small.mp4" width="500" height="500">               </video>     
+    <video  autoplay src ="/Video/sample-mp4-file-small.mp4" width="500" height="500">               </video>     
+      <!--Plays in the background just muted-->
+    <video  muted src ="/Video/sample-mp4-file-small.mp4" width="500" height="500">               </video> 
     
-    <!-- Playing 1 video with controls and resized.-->
-    <video>
-
-
+    <!--Can choose more than 1 video from the source.-->
+    <video  controls autoplay >
+        <!--Video1-->
+      <source  src ="/Video/sample-mp4-file-small.mp4">
+        <!--Video2-->
+      <source  src ="/Video/Keyboard video.mp4">
     </video>
+
     
 
 </body>
