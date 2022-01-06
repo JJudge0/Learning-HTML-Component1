@@ -49,23 +49,56 @@ If you type "!" it would generate a code block
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--This is so the website can scale on a mobile device-->
     <meta http-equiv="refresh" content="30"> <!--Refresh webpage -->
 </head>
-<body>
-    <h3>Attribute table</h3>
+ <body>
+    <h3>Notes: Attribute table</h3>
     <table bgcolor="black" width="700" >  <!--7 cells each cell is 100 in width-->
           <tr bgcolor="grey">
             <th width=100>Attribute</th> <!--Note: Table Headers-->
             <th width=100>Value</th>
             <th width=100>Description</th>
           </tr>
-          <tr bgcolor="lightgrey" align= "centre">   <!--Align can be left, right or centre -->
-            <td> <a href="att_meta_charset.asp">charset</a></td>
-            <td>Character_Set</td>
-            <td>9-5</td>
-            <td>9-5</td>
-            <td>9-5</td>
-            <td>Closed</td>
-            <td>Closed</td>
+          <tr bgcolor="lightblue" align= "centre">   <!--Align can be left, right or centre -->
+            <td> <a href="att_meta_charset.asp">Charset</a></td>
+            <td><i> Character_Set</i></td>
+            <td>Specifies the character encoding for the HTML document</td>
+          </tr>
+        
+          <tr bgcolor="lightyellow" align= "centre">
+            <td> <a href="att_meta_charset.asp">Content</a></td>
+            <td><i>text</i></td>
+            <td>Specifies the value associated with the http-equiv or name attribute</td>
+         </tr>
+          
+         <tr bgcolor="lightgreen" align= "centre">
+            <td> <a href="att_meta_charset.asp">http-equiv</a></td>
+            <td>
+              <ol type= '1'> <!--Uses "1,2,3,4"-->
+                    <li> content-security-policy</li>
+                    <li> content-type</li>
+                    <li> default-style</li>
+                     <li> refresh </li>
+              </ol>
+            </td>
+            <td> Provides an HTTP header for the information/value of the content attribute</td>
+         </tr>
+
+         <tr bgcolor="lightpink" align= "centre">
+          <td> <a href="att_meta_charset.asp"> name</a></td>
+          <td>
+            <ol type= '1'> <!--Uses "1,2,3,4"-->
+              <!--Note: OL can have a type attribute it replaces the 'Numbers' with any other ordered symbol such as "1,2,3,4" can be replaced with "a,b,c,d"-->
+                    <li> application-name</li>
+                    <li> author </li>
+                    <li> description </li>
+                    <li> generator </li>
+                    <li> keywords </li>
+                    <li> viewport </li>
+            </ol>
+          </td>
+          <td>Specifies a name for the metadata</td>
           </tr>
     </table>
-</body>
+  </body>
 </html>
+
+        
