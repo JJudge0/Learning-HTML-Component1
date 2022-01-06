@@ -20,7 +20,7 @@ Examples: Used within a paragraph so certain words can be highlighted or styled!
 =====================HTML Meta Tags Elements===============
 <meta name> -
 <meta content>- 
-
+<meta> 
 ================================================================================================
 -->
 <!--Rules within HTML TAGS
@@ -40,15 +40,36 @@ If you type "!" it would generate a code block
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">  <!-- Default charset-->
+    <meta charset="UTF-8">  <!-- Default charset but overall sets the character encoding for the HTML doc-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta Tags lesson-12</title>
     <meta name="Description" content= "Learning HTML tutorials for beginners"> 
     <meta name="Keywords" content= "Learning HTML tutorials for beginners"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--This is so the website can scale on a mobile device-->
+    <meta http-equiv="refresh" content="30"> <!--Refresh webpage -->
 </head>
 <body>
-    
+    <h3>Attribute table</h3>
+    <table bgcolor="black" width="700" >  <!--7 cells each cell is 100 in width-->
+          <tr bgcolor="grey">
+            <th width=100>Monday</th> <!--Note: Table Headers-->
+            <th width=100>Tuesday</th>
+            <th width=100>Wednesday</th>
+            <th width=100>Thrusday</th>
+            <th width=100>Friday</th>
+            <th width=100>Saturday</th>
+            <th width=100>Sunday</th>
+          </tr>
+          <tr bgcolor="lightgrey" align= "left">   <!--Align can be left, right or centre -->
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>Closed</td>
+            <td>Closed</td>
+          </tr>
+    </table>
 </body>
 </html>
