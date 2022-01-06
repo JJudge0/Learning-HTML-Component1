@@ -5,12 +5,13 @@ HTML(Hyper Text Mark Language)- Building blocks the skeleton of the website
 Cascading Style Sheets(CSS)- Casscading giving design and bringing a website to life appeareance
 JS (Java Script)- Functionality to the website aka animations etc.. object-oriented capabilities as it's a dynamic compute programming language
 =====================HTML Notes===============
+<button> tag supports Global & Event Attributes
 The HTML <iframe> tag specifies an inline frame
 The src attribute defines the URL of the page to embed
 Always include a title attribute (for screen readers)
 The height and width attributes specifies the size of the iframe
 Use border:none; to remove the border around the iframe
-=====================HTML Iframes Elements===============
+=====================HTML Buttons Elements===============
 META TAGS ARE SELF CLOSING ONLY ADDED IN HEAD TAG BECAUSE IT TELLS THE WEBSITE WHAT THE HTML WEBPAGE IS ABOUT.
   <iframe> </iframe>- Embedded content from another source into a HTML document:
 Example Used for ads, Used in many hacking techniques. The reason why it can clone a website completely and resized to fit the entire webpage 
@@ -39,9 +40,101 @@ If you type "!" it would generate a code block
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My first website</title>
+</head>
+  <body>
+    <a href="https://www.google.com">
+        <button onclick="doSomething()" style="background-color:#333333;color:#00FF00;border-radius:5px">click me!</button> <!-- So the button is rounded and has the sharp edges-->
+    </a>
+    
+    <p id="test">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "Goodbye";
+        }
+    </script>
+  </a>
+    <button onclick= "doSomething()" height="750" width="760" style="background-color:white"> </button> 
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
 </head>
 <body>
-    
+
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+
 </body>
 </html>
