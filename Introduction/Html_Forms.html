@@ -1,0 +1,170 @@
+<!--HTML: Forms- Exercise:15 -->
+<!-- 3 Main Components
+=============================================================
+HTML(Hyper Text Mark Language)- Building blocks the skeleton of the website
+Cascading Style Sheets(CSS)- Casscading giving design and bringing a website to life appeareance
+JS (Java Script)- Functionality to the website aka animations etc.. object-oriented capabilities as it's a dynamic compute programming language
+=====================HTML Notes=============================
+<button> tag supports Global & Event Attributes
+Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element!
+Tip: Always specify the type attribute for a <button> element, to tell browsers what type of button it is.
+=====================HTML Forms Elements=================
+autofocus	autofocus- Specifies that a button should automatically get focus when the page loads
+disabled	disabled- Specifies that a button should be disabled
+form	form_id- Specifies which form the button belongs to
+=============================================================
+formaction- Specifies where to send the form-data when a form is submitted. Only for type="submit"
+URL
+=============================================================
+formenctype- pecifies how form-data should be encoded before sending it to a server. Only for type="submit"
+application/x-www-form-urlencoded
+multipart/form-data
+text/plain	
+=============================================================
+formmethod- Specifies how to send the form-data (which HTTP method to use). Only for type="submit"
+get
+post	
+=============================================================
+formnovalidate- Specifies that the form-data should not be validated on submission. Only for type="submit"
+formnovalidate
+=============================================================
+formtarget-	Specifies where to display the response after submitting the form. Only for type="submit"
+_blank
+_self
+_parent
+_top
+framename	
+=============================================================
+name- Specifies a name for the button
+name	
+=============================================================
+type- Specifies the type of button
+button
+reset
+submit
+=============================================================
+value-	Specifies an initial value for the button
+text
+================================================================================================
+-->
+<!--Rules within HTML TAGS
+================================================================================================
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+The <br> is a breaker The <br> tag inserts a single line break. The <br> tag is useful for writing addresses or poems. The <br> tag is an empty tag which means that it has no end tag.
+The <hr> represents horizontal rule or thematic break
+If you type "!" it would generate a code block
+================================================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms lesson-15</title>
+</head>
+    <body>
+         
+        <form action="action_page.php" method="POST">  <!--Need to send to webpage so an example is PHP and use POST REQUESTS to send and GET requests to recieve-->
+         
+            <div>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Spongebob" required> <!--PlaceHolders give a hint for the input field!-->
+            </div>
+         
+                 <br>
+         
+                 <div>
+                     <label for="lname">last name:</label>
+                     <input type="text" id="lname" name="lname" placeholder="Squarepants" required> <!--Required is a boolean attribute that requires the field to be filled out!-->
+                 </div>
+         
+                 <br>
+         
+                 <div>
+                     <label for="pass">password:</label>
+                     <input type="password" id="pass" name="pass" maxlength="12" required> <!--Max length is 12 characters!-->
+                 </div>
+         
+                 <br>
+         
+                 <div>
+                     <label for="email">email:</label>
+                     <input type="email" id="email" name="email" placeholder="SPants@gmail.com">
+                 </div>
+         
+                 <br>
+         
+                 <div>
+                     <label for="phone">phone #:</label>
+                     <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+                 </div>
+         
+                 <br>
+         
+                 <div>
+                     <label for="bdate">birthdate:</label>
+                     <input type="date" id="bdate" name="bdate">
+                 </div>
+                 
+                 <br>
+         
+                 <div>
+                     <label for="quantity">quantity:</label>
+                     <input type="number" id="quantity" name="quantity" min="0" max="99" value="1"> <!--Setting limits on Quantity because u don't want user to choose a random number-->
+                 </div>
+                 
+                 <br>
+         
+                 <div>
+                     <label for="title">title:</label>
+         
+                     <label for="Mr.">Mr.</label>  <!--The "For attribute and ID attribute is used to click on the options"-->
+                     <input type="radio" id="Mr." name="title" value="Mr."> <!--Options box within the same group by the attribute given by 'name' which is "title", if it's not given it will won't be considered apart of that option group-->
+         
+                     <label for="Mrs.">Mrs.</label>
+                     <input type="radio" id="Mrs." name="title" value="Mrs.">
+         
+                     <label for="PhD.">PhD.</label>
+                     <input type="radio" id="PhD." name="title" value="PhD.">
+                 </div>
+                 
+                 <br>
+         
+                 <div>
+                     <label for="payment">payment:</label> <!--Setting limits on Quantity because u don't want user to choose a random number-->
+                     <select id="payment" name="payment">
+                         <option value="visa">visa</option>
+                         <option value="mastercard">mastercard</option>
+                         <option value="giftcard">giftcard</option>
+                     </select>
+                 </div>
+                 
+                 <br>
+         
+                 <div>
+                     <label for="subscribe">subscribe:</label>
+                     <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+                 </div>
+                 
+                 <br>
+         
+                 <div>
+                     <input type="reset">
+                 </div>
+         
+                 <br>
+         
+                 <div>
+                     <input type="submit">
+                 </div>
+         
+        </form> 
+   </body>
+</html>
