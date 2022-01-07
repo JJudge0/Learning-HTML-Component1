@@ -8,43 +8,48 @@ JS (Java Script)- Functionality to the website aka animations etc.. object-orien
 <button> tag supports Global & Event Attributes
 Inside a <button> element you can put text (and tags like <i>, <b>, <strong>, <br>, <img>, etc.). That is not possible with a button created with the <input> element!
 Tip: Always specify the type attribute for a <button> element, to tell browsers what type of button it is.
+<form>-	Defines an HTML form for user input
+<input>-	Defines an input control
+<textarea>-	Defines a multiline input control (text area)
+<label>-	Defines a label for an <input> element
+<fieldset>-	Groups related elements in a form
+<legend>-	Defines a caption for a <fieldset> element
+<select>-	Defines a drop-down list
+<optgroup>-	Defines a group of related options in a drop-down list
+<option>-	Defines an option in a drop-down list
+<button>-	Defines a clickable button
+<datalist>-	Specifies a list of pre-defined options for input controls
+<output>-	Defines the result of a calculation
 =====================HTML Forms Elements=================
-autofocus	autofocus- Specifies that a button should automatically get focus when the page loads
-disabled	disabled- Specifies that a button should be disabled
-form	form_id- Specifies which form the button belongs to
+<form>- element is used to create an HTML form for user input as it's container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+<input>- element can be displayed in many ways, depending on the type attribute
+<input type="text">- defines a single-line input field for text input.
+
 =============================================================
-formaction- Specifies where to send the form-data when a form is submitted. Only for type="submit"
-URL
+<label> Element-
+The <label> tag defines a label for many form elements.
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
 =============================================================
-formenctype- pecifies how form-data should be encoded before sending it to a server. Only for type="submit"
-application/x-www-form-urlencoded
-multipart/form-data
-text/plain	
+
 =============================================================
-formmethod- Specifies how to send the form-data (which HTTP method to use). Only for type="submit"
-get
-post	
+<input type="radio">- defines a radio button which means it lets the user select ONE of a limited number of choices.
+<input type="checkbox">- defines a checkbox which means it lets a user select ZERO or MORE options of a limited number of choices.
+<input type="submit">- defines a button for submitting the form data to a form-handler.
+The form-handler is typically a file on the server with a script for processing input data.
+The form-handler is specified in the form's action attribute.
 =============================================================
-formnovalidate- Specifies that the form-data should not be validated on submission. Only for type="submit"
-formnovalidate
+
 =============================================================
-formtarget-	Specifies where to display the response after submitting the form. Only for type="submit"
-_blank
-_self
-_parent
-_top
-framename	
-=============================================================
-name- Specifies a name for the button
-name	
-=============================================================
-type- Specifies the type of button
-button
-reset
-submit
-=============================================================
-value-	Specifies an initial value for the button
-text
+The Name Attribute for <input>
+Notice that each input field must have a name attribute to be submitted.
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form>
+If the name attribute is omitted, the value of the input field will not be sent at all
 ================================================================================================
 -->
 <!--Rules within HTML TAGS
